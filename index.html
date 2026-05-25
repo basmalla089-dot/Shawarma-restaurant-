@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>شاورما سكوير | دراع الميزان تيزي وزو</title>
+
+    <meta name="description" content="أفضل شاورما في تيزي وزو مع توصيل سريع" />
+
+    <link rel="manifest" href="manifest.json" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <div class="offer-banner">🔥 عرض اليوم: كومبو عائلي 15% خصم</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-drumstick-bite"></i>
+          شاورما سكوير
+        </div>
+
+        <button class="cart-btn" onclick="toggleCart()">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count" id="cartCount">0</span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero">
+      <h1>🍖 شاورما سكوير</h1>
+
+      <p class="hero-subtitle">
+        دراع الميزان - تيزي وزو
+        <br />
+        توصيل سريع 🚀
+      </p>
+
+      <a href="#menu" class="cta-btn"> اطلب الآن </a>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="menu-section">
+      <h2 class="section-title">🍗 القائمة</h2>
+
+      <div class="menu-grid">
+        <!-- Chicken -->
+        <div class="menu-card">
+          <div class="menu-image chicken-img">
+            <div class="offer-badge">🏆 الأكثر طلباً</div>
+          </div>
+
+          <div class="menu-info">
+            <h3 class="menu-name">شاورما دجاج</h3>
+
+            <div class="menu-price">220 دج</div>
+
+            <button class="add-cart-btn" onclick="addToCart('شاورما دجاج',220)">
+              أضف للسلة
+            </button>
+          </div>
+        </div>
+
+        <!-- Beef -->
+        <div class="menu-card">
+          <div class="menu-image beef-img">
+            <div class="offer-badge">خصم 15%</div>
+          </div>
+
+          <div class="menu-info">
+            <h3 class="menu-name">شاورما لحم</h3>
+
+            <div class="menu-price">280 دج</div>
+
+            <button class="add-cart-btn" onclick="addToCart('شاورما لحم',280)">
+              أضف للسلة
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cart Modal -->
+    <div class="modal" id="cartModal">
+      <div class="modal-content">
+        <h2>🛒 السلة</h2>
+
+        <div id="cartItems"></div>
+
+        <div class="total" id="totalPrice">المجموع: 0 دج</div>
+
+        <button class="add-cart-btn" onclick="checkoutWhatsApp()">
+          إتمام الطلب عبر واتساب
+        </button>
+      </div>
+    </div>
+
+    <!-- WhatsApp -->
+    <a href="https://wa.me/213000000000" class="whatsapp-btn">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+  </body>
+</html>
